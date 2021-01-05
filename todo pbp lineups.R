@@ -4,6 +4,10 @@ library(zoo)
 library(nbastatR)
 library(future)
 
+seconds_to_minutes <- function(x){
+  paste0(floor(x / 60), ":", str_pad(x %% 60, side = "left", width = 2, pad = 0))
+}
+
 game_logs <- game_logs(seasons = 2021)
 
 games <- game_logs %>%
