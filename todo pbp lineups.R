@@ -104,7 +104,8 @@ lineups_quarters <- subs_made %>%
 missing_players_ot <- tribble(
   ~idGame,   ~slugTeamPlayer,          ~namePlayer,     ~numberPeriod,
   22000023,        "DET",           "Delon Wright",           5,
-  22000100,        "IND",           "Justin Holiday",         5         
+  22000100,        "IND",           "Justin Holiday",         5,
+  22000120,        "DEN",           "Gary Harris",            5
 ) %>%
   left_join(games %>%
               select(idGame, slugTeamHome, slugTeamAway)) %>%
