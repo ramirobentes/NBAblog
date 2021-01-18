@@ -20,6 +20,10 @@ games <- game_logs %>%
 plan(multiprocess)
 play_logs_all <- play_by_play_v2(game_ids = unique(games$idGame))
 
+replay_reviews <- play_logs_all %>%
+  distinct(idGame, numberEvent, .keep_all = TRUE) %>%   # remove duplicate events
+  filter(numberEventActionType == 18)
+
 new_pbp <- play_logs_all %>%
   distinct(idGame, numberEvent, .keep_all = TRUE) %>%   # remove duplicate events
   filter(numberEventMessageType != 18) %>%
