@@ -291,5 +291,5 @@ lineup_stats <- lineup_game_stats %>%
 #   mutate(seasonMin = paste0(floor(seasonSecs / 60), ":", str_pad(round(seasonSecs %% 60, 0), side = "left", width = 2, pad = 0))) %>%
 #   select(-seasonSecs)
 
-rm(lineup_game, games, df_nba_player_dict, lineup_subs, lineups_quarters, missing_players_ot, others_qtr, subs_made)
+rm(lineup_game, games, df_nba_player_dict, lineup_subs, missing_players_ot, others_qtr, subs_made)
 
