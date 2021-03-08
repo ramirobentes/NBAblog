@@ -246,7 +246,7 @@ lineup_stats <- lineup_game_stats %>%
   mutate(lineupStint = cumsum(lineupChange)) %>%
   ungroup() %>%
   arrange(idGame, lineupStint, numberEvent) %>%
-  group_by(idGame, slugTeam, lineup, lineupStint) %>%
+  group_by(idGame, slugTeam, lineup, lineupStint, numberPeriod) %>%
   summarise(initialScoreTeam = ptsTeam[row_number() == min(row_number())],
             initialScoreOpp = ptsOpp[row_number() == min(row_number())],
             finalScoreTeam = ptsTeam[row_number() == max(row_number())],
