@@ -106,7 +106,10 @@ missing_players_ot <- tribble(
   ~idGame,   ~slugTeamPlayer,          ~namePlayer,     ~numberPeriod,
   22000023,        "DET",           "Delon Wright",           5,
   22000100,        "IND",           "Justin Holiday",         5,
-  22000120,        "DEN",           "Gary Harris",            5
+  22000120,        "DEN",           "Gary Harris",            5,
+  22000440,        "MIN",           "Anthony Edwards",        5,
+  22000465,        "NOP",           "Lonzo Ball",             5,
+  22000485,        "DAL",           "Dorian Finney-Smith",    1
 ) %>%
   left_join(games %>%
               select(idGame, slugTeamHome, slugTeamAway)) %>%
