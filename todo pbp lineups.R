@@ -75,7 +75,8 @@ subs_made <- new_pbp %>%
   ungroup()
 
 others_qtr <- new_pbp %>%
-  filter(numberEventMessageType != 8) %>%                             
+  filter(numberEventMessageType != 8) %>%      
+  filter(!(numberEventMessageType == 11 & numberEventActionType == 4)) %>% # Ejection
   filter(!(numberEventMessageType == 6 & numberEventActionType %in% c(10, 11, 16, 18, 25))) %>%     # Note 7
   pivot_longer(cols = starts_with("namePlayer"),
                names_to = "playerNumber",
@@ -109,7 +110,9 @@ missing_players_ot <- tribble(
   22000120,        "DEN",           "Gary Harris",            5,
   22000440,        "MIN",           "Anthony Edwards",        5,
   22000465,        "NOP",           "Lonzo Ball",             5,
-  22000485,        "DAL",           "Dorian Finney-Smith",    1
+  22000485,        "DAL",           "Dorian Finney-Smith",    1,
+  22000637,        "CHI",           "Coby White",             5,
+  22000645,        "IND",           "T.J. McConnell",         5
 ) %>%
   left_join(games %>%
               select(idGame, slugTeamHome, slugTeamAway)) %>%
