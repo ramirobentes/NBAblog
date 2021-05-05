@@ -18,9 +18,6 @@ play_logs_all <- play_by_play_v2(game_ids = unique(games$idGame))
 
 new_pbp <- play_logs_all %>%
   mutate(numberOriginal = numberEvent) %>%
-  anti_join(correcoes %>%
-              filter(correction == "remove") %>%
-              select(idGame, numberOriginal)) %>% # ver se deixa
   distinct(idGame, numberEvent, .keep_all = TRUE) %>%   # remove duplicate events
   mutate(secsLeftQuarter = (minuteRemainingQuarter * 60) + secondsRemainingQuarter) %>%                       
   mutate(secsStartQuarter = case_when(                                                                        
