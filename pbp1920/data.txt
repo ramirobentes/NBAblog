@@ -1,0 +1,28 @@
+path:
+- https://github.com/ramirobentes/NBAblog/releases/download/pbp1920-adb408c/data.csv
+- data.rds
+rows: 503970
+cols: 20
+columns:
+  namePlayer1: character
+  teamNamePlayer1: character
+  slugTeamPlayer1: character
+  namePlayer2: character
+  teamNamePlayer2: character
+  slugTeamPlayer2: character
+  namePlayer3: character
+  teamNamePlayer3: character
+  slugTeamPlayer3: character
+  idGame: numeric
+  numberEvent: numeric
+  numberEventMessageType: numeric
+  numberEventActionType: numeric
+  numberPeriod: numeric
+  timeQuarter: character
+  descriptionPlayHome: character
+  descriptionPlayNeutral: character
+  descriptionPlayVisitor: character
+  minuteRemainingQuarter: numeric
+  secondsRemainingQuarter: numeric
+description: pbp1920
+type: table

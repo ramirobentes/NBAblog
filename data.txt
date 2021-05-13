@@ -4,3 +4,9 @@
   cols: 20
   description: testenba
   type: table
+- path: pbp1920
+  name: pbp1920
+  rows: 503970
+  cols: 20
+  description: pbp1920
+  type: table
