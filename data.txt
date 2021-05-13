@@ -1,0 +1,6 @@
+- path: tabela-nova
+  name: tabela-nova
+  rows: 503970
+  cols: 20
+  description: testenba
+  type: table
