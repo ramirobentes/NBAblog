@@ -1,0 +1,15 @@
+path:
+- data.csv
+- data.rds
+rows: 8622
+cols: 7
+columns:
+  slugTeam: character
+  match_up: character
+  dateGame: Date
+  offrtg: character
+  defrtg: character
+  numberPeriod: numeric
+  slugOpp: character
+description: advancedlogs20
+type: table

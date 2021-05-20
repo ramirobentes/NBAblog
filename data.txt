@@ -16,3 +16,9 @@
   cols: 20
   description: pbp2021
   type: table
+- path: ratings-quarter-2020
+  name: ratings-quarter-2020
+  rows: 8622
+  cols: 7
+  description: advancedlogs20
+  type: table
