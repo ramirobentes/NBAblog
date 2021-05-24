@@ -28,3 +28,9 @@
   cols: 7
   description: advancedlogs21
   type: table
+- path: pbp-api-20
+  name: pbp-api-20
+  rows: 516195
+  cols: 11
+  description: pbpapi20
+  type: table
