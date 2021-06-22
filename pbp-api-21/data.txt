@@ -1,0 +1,19 @@
+path:
+- https://github.com/ramirobentes/NBAblog/releases/download/pbp-api-21-0b16355/data.csv
+- data.rds
+rows: 511222
+cols: 11
+columns:
+  clock: hms
+  eventMsgType: numeric
+  description: character
+  personId: numeric
+  teamId: numeric
+  vTeamScore: numeric
+  hTeamScore: numeric
+  isScoreChange: logical
+  isVideoAvailable: logical
+  idGame: numeric
+  numberPeriod: numeric
+description: pbpapi21
+type: table
