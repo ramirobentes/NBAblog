@@ -24,7 +24,7 @@
   type: table
 - path: ratings-quarter-2021
   name: ratings-quarter-2021
-  rows: 7016
+  rows: 8764
   cols: 7
   description: ratings quarter 21
   type: table

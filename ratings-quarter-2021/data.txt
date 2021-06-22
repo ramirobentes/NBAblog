@@ -1,7 +1,7 @@
 path:
 - data.csv
 - data.rds
-rows: 7016
+rows: 8764
 cols: 7
 columns:
   slugTeam: character
