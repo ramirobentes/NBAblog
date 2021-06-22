@@ -24,9 +24,9 @@
   type: table
 - path: ratings-quarter-2021
   name: ratings-quarter-2021
-  rows: 8764
+  rows: 7016
   cols: 7
-  description: advancedlogs21
+  description: ratings quarter 21
   type: table
 - path: pbp-api-20
   name: pbp-api-20

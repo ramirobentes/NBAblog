@@ -1,7 +1,7 @@
 path:
 - data.csv
 - data.rds
-rows: 8764
+rows: 7016
 cols: 7
 columns:
   slugTeam: character
@@ -11,5 +11,5 @@ columns:
   defrtg: character
   numberPeriod: numeric
   slugOpp: character
-description: advancedlogs21
+description: ratings quarter 21
 type: table
