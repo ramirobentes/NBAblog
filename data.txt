@@ -38,5 +38,5 @@
   name: pbp-api-21
   rows: 511222
   cols: 11
-  description: pbpapi21
+  description: pbp api 21
   type: table
